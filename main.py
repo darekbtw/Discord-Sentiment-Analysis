@@ -50,6 +50,6 @@ def analyze_messages(messages):
     overall_sentiment = get_sentiment(avg_sentiment)
     print(f"\nSentiment: {overall_sentiment}\n")
 
-
-messages = get_messages(1029181355017379900)
+input = input("Enter your Discord Channel ID: ")
+messages = get_messages(input)
 analyze_messages(messages)
